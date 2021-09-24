@@ -1,14 +1,10 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState} from 'react';
 import { Container, IconButton } from '@material-ui/core';
 
 const TOTAL_SLIDES = 2;
 const Slider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [ImageNum, setImageNum] = useState(1);
-    // const slideRef = useRef(null);
-
-    // const Image = '../assets/images/' + ImageNum + '.png';
-    console.log(ImageNum, Image);
 
 const nextSlide = () => {
     if (currentSlide >= TOTAL_SLIDES) {
@@ -30,10 +26,6 @@ const prevSlide = () => {
     }
 };
 
-// useEffect(() => {
-//     slideRef.current.style.transition = "all 0.5s ease-in-out";
-//     slideRef.current.style.transform = `translateX(-${currentSlide}00%)`;
-//   }, [currentSlide]);
 
     return (
         <Container>
