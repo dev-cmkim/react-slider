@@ -13,14 +13,14 @@ const nextSlide = () => {
         setCurrentSlide(0);
         setImageNum(1)
     } else {
-        setCurrentSlide( currentSlide +1);
+        setCurrentSlide( currentSlide + 1);
         setImageNum (ImageNum + 1);
     }
 };
 const prevSlide = () => {
     if (currentSlide === TOTAL_SLIDES) {
         //마지막페이지
-        setCurrentSlide(currentSlide -1);
+        setCurrentSlide(currentSlide - 1);
         setImageNum (2);
     } else if( currentSlide === 1 ) {
         //두번째페이지
